@@ -21,7 +21,7 @@ export const services = [
   },
   {
     title: "Inteligencia artificial",
-    icon: "✨",
+    icon: "💡",
   },
   {
     title: "Copywriting",

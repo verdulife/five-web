@@ -39,11 +39,12 @@ const { name, title, description, image, url } = meta;
     <meta name="twitter:image" content={image} />
     <meta name="twitter:image:alt" content={title} />
   </head>
-  <body class="overflow-hidden bg-white text-neutral-800">
+  <body class="overflow-clip bg-white text-neutral-800">
     <Background />
     <Header />
 
     <main
+      id="scroller"
       class="relative flex h-dvh snap-y snap-mandatory flex-col items-center justify-start overflow-y-auto"
     >
       <slot />
