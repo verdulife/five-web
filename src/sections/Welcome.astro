@@ -1,25 +1,27 @@
----
-import Logo from "@/assets/Logo.astro";
----
-
-<section class="flex flex-wrap h-dvh">
-  <article
-    class="flex h-1/2 lg:h-full w-full lg:w-1/2 flex-col items-center justify-center gap-16 lg:gap-32 p-4"
-  >
-    <h1 class="max-w-xs lg:max-w-2xl font-title text-4xl lg:text-6xl xl:text-8xl text-fiveblue-600">
+<section class="flex h-dvh w-full max-w-7xl snap-center flex-wrap shrink-0">
+  <article class="flex h-full w-1/2 flex-col justify-center">
+    <h1
+      class="max-w-xs font-title text-4xl text-fiveblue-600 lg:max-w-2xl lg:text-7xl"
+    >
       Has llegado al lugar indicado si quieres tener más tiempo para tí
     </h1>
-
-    <Logo class="w-24 lg:w-36" />
   </article>
 
   <aside
-    class="flex h-1/2 lg:h-full w-full lg:w-1/2 items-end justify-center bg-fivegreen-500 pt-20 px-4"
+    class="flex h-1/2 w-full items-end justify-end p-20 px-4 lg:h-full lg:w-1/2"
   >
-    <img
-      src="/images/five-welcome.webp"
-      alt="Five Welcome"
-      class="h-full object-contain"
-    />
+    <figure
+      class:list={[
+        "relative aspect-[2/3] h-full",
+        "before:absolute before:-right-36 before:-top-6 before:size-full before:scale-75",
+        "before:rounded-full before:bg-fivegreen-500 before:shadow-inner before:shadow-black/20",
+      ]}
+    >
+      <img
+        src="/images/five-hero.jpg"
+        alt="Five Hero"
+        class="size-full -rotate-3 rounded-full border border-neutral-500/10 object-cover shadow-2xl shadow-black/50"
+      />
+    </figure>
   </aside>
 </section>

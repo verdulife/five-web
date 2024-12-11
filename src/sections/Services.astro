@@ -1,0 +1,35 @@
+---
+import { services } from "@/lib/services";
+---
+
+<section
+  class="flex h-dvh w-full shrink-0 snap-center flex-col flex-wrap items-center bg-fivegreen-500 text-white"
+>
+  <article
+    class="flex size-full max-w-7xl flex-col items-center justify-center gap-8 p-4"
+  >
+    <h2 class="text-center font-title text-3xl lg:text-5xl">
+      Servicios diseñados para hacer crecer tu negocio mientras tú ganas tiempo.
+    </h2>
+
+    <ul class="grid w-full grid-cols-4">
+      {
+        services.map(({ title, icon }) => (
+          <li
+            class:list={[
+              "flex w-auto flex-col items-center justify-center",
+              "py-6 text-center drop-shadow-[2px_2px_2px_#00000033] odd:-rotate-6 even:rotate-3",
+            ]}
+          >
+            <div class="flex aspect-square -rotate-45 items-center justify-center rounded-[60px] bg-fiveblue-600 p-6 text-6xl">
+              <span class="rotate-45">{icon}</span>
+            </div>
+            <h3 class="z-10 -mt-4 rounded-full bg-fiveblue-600 px-6 py-4 text-xl">
+              {title}
+            </h3>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
+</section>
