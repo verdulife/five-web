@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable";
+  --font-title: "Recoleta", serif;
+
+  --color-fivegreen-50: #edfcf6;
+  --color-fivegreen-100: #d3f8e6;
+  --color-fivegreen-200: #aaf0d3;
+  --color-fivegreen-300: #73e2ba;
+  --color-fivegreen-400: #3bcc9d;
+  --color-fivegreen-500: #1ac593;
+  --color-fivegreen-600: #0b906c;
+  --color-fivegreen-700: #097359;
+  --color-fivegreen-800: #0a5b47;
+  --color-fivegreen-900: #094b3d;
+  --color-fivegreen-950: #042a22;
+
+  --color-fiveblue-50: #eef7ff;
+  --color-fiveblue-100: #d9ecff;
+  --color-fiveblue-200: #bbdeff;
+  --color-fiveblue-300: #8ccaff;
+  --color-fiveblue-400: #55abff;
+  --color-fiveblue-500: #2e87ff;
+  --color-fiveblue-600: #1968f9;
+  --color-fiveblue-700: #1050e5;
+  --color-fiveblue-800: #1442b9;
+  --color-fiveblue-900: #163b92;
+  --color-fiveblue-950: #132658;
+}
+
+:root {
+  @apply scroll-smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-fiveblue-500) #fff;
+}
+
+p,
+figcaption {
+  @apply text-pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-balance;
+}

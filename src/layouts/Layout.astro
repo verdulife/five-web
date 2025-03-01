@@ -1,4 +1,5 @@
 ---
+import "@/styles/global.css";
 import "@/assets/font/recoleta.css";
 import "@fontsource-variable/inter";
 import { meta } from "@/lib/metadata";
@@ -39,36 +40,14 @@ const { name, title, description, image, url } = meta;
     <meta name="twitter:image" content={image} />
     <meta name="twitter:image:alt" content={title} />
   </head>
-  <body class="overflow-clip bg-white text-neutral-800">
-    <Background />
+  <body class="min-h-svh overflow-x-clip bg-white text-neutral-800">
+    <!-- <Background /> -->
     <Header />
 
-    <main
-      id="scroller"
-      class="relative flex h-dvh snap-y snap-mandatory flex-col items-center justify-start overflow-y-auto"
-    >
+    <main class="flex flex-1 flex-col items-center">
       <slot />
     </main>
 
     <Footer />
   </body>
-
-  <style is:global>
-    :root {
-      @apply scroll-smooth;
-    }
-
-    p {
-      @apply text-pretty;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      @apply text-balance;
-    }
-  </style>
 </html>
