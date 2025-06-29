@@ -11,7 +11,7 @@
   "dependencies": {
     "@fontsource-variable/inter": "^5.1.0",
     "@tailwindcss/vite": "^4.0.9",
-    "astro": "^5.4.1",
+    "astro": "^5.10.1",
     "motion": "^11.13.5",
     "tailwindcss": "^4.0.9"
   },

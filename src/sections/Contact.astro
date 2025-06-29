@@ -1,3 +1,90 @@
-<section class="flex h-svh items-center justify-center">
-  <h2>Contacto</h2>
+<section class="grid w-full max-w-7xl grid-cols-2 gap-20 py-48">
+  <article
+    class="flex flex-col items-center justify-center text-center lg:items-start lg:text-left"
+  >
+    <h2 class="max-w-3xl text-2xl font-bold md:text-3xl lg:text-4xl">
+      Contacta con nosotros
+    </h2>
+    <p class="mt-4 max-w-2xl text-lg">
+      Estamos aquí para resolver tus dudas y ayudarte a encontrar la mejor
+      solución para tu marca. Puedes contactarnos a través del formulario o en
+      cualquiera de los siguientes canales:
+    </p>
+    <ul class="mt-10 flex flex-col gap-8">
+      <li class="flex flex-col">
+        <p>Teléfono/Whatsapp</p>
+        <a
+          href="tel:0034661100652"
+          class="text-fiveblue-500 mt-1 text-xl underline hover:no-underline"
+        >
+          (+34) 661 10 06 52
+        </a>
+      </li>
+      <li class="flex flex-col">
+        <p>Correo electrónico</p>
+        <a
+          href="mailto:hello@fivesocialmedia.com"
+          class="text-fiveblue-500 mt-1 text-xl underline hover:no-underline"
+        >
+          hello@fivesocialmedia.com
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <form
+    class="flex w-full max-w-2xl flex-col items-center justify-center gap-8 rounded-xl border border-neutral-50/10 bg-fivegreen-200 px-4 py-8 text-center shadow backdrop-blur-xl md:p-8"
+  >
+    <label class="flex w-full flex-col items-center gap-2">
+      <span> Nombre de contacto </span>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Ej. Maria García"
+        class="w-full max-w-md rounded-lg border border-neutral-50/10 bg-fivegreen-50 p-3 text-center text-lg placeholder:text-neutral-600"
+      />
+    </label>
+    <label class="flex w-full flex-col items-center gap-2">
+      <span> Correo electrónico o teléfono </span>
+      <input
+        type="text"
+        name="contacto"
+        placeholder="Ej. mariag@gmail.com / 600 66 06 60"
+        class="w-full max-w-md rounded-lg border border-neutral-50/10 bg-fivegreen-50 p-3 text-center text-lg placeholder:text-neutral-600"
+      />
+    </label>
+    <label class="flex w-full flex-col items-center gap-2">
+      <span> Tu mensaje </span>
+      <textarea
+        name="mensaje"
+        placeholder="Escribe tu mensaje..."
+        rows="5"
+        class="w-full max-w-md resize-none rounded-lg border border-neutral-50/10 bg-fivegreen-50 p-3 text-center text-lg placeholder:text-neutral-600"
+        data-lt-tmp-id="lt-220750"
+        spellcheck="false"
+        data-gramm="false"></textarea>
+    </label>
+    <div class="mt-4 flex w-full flex-col items-center gap-2">
+      <p>Enviar formulario a través de</p>
+      <div
+        class="group flex w-full max-w-md rounded-full border border-neutral-50/10 bg-fivegreen-300 p-2"
+      >
+        <a
+          id="sendEmail"
+          href="mailto:info@sglvilanova.com?subject=Contacto%20web%20⚡&body=Contacto%3A%20%20()%0A"
+          class="hover:bg-fiveblue-500 w-full max-w-xs rounded-full p-2 text-center transition-colors hover:text-neutral-50"
+        >
+          Email
+        </a>
+        <a
+          id="sendWhatsapp"
+          href="https://wa.me/34639963246?text=Contacto%3A%20%20()%0A"
+          target="_blank"
+          class="hover:bg-fiveblue-500 w-full max-w-xs rounded-full p-2 text-center transition-colors hover:text-neutral-50"
+        >
+          Whatsapp
+        </a>
+      </div>
+    </div>
+  </form>
 </section>

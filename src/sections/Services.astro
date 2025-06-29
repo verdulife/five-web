@@ -1,54 +1,97 @@
-<section class="mt-48 flex w-full max-w-7xl flex-col items-center">
-  <h2 class="font-title max-w-2xl text-center text-3xl lg:text-5xl">
-    Servicios adaptados a tus necesidades
-  </h2>
+---
+import Service from "@/components/Service.astro";
+import Pen from "@/assets/Pen.astro";
+import Plan from "@/assets/Plan.astro";
+---
 
-  <p class="mt-4 max-w-4xl text-center">
-    Nuestros paquetes son flexibles y se pueden combinar para potenciar
-    diferentes aspectos de tu presencia en redes. Ajustamos los servicios según
-    tus necesidades, para que siempre obtengas lo que más beneficia a tu marca.
-  </p>
+<section class="mt-48 flex w-full max-w-5xl flex-col items-center gap-10">
+  <div class="flex flex-col items-center gap-2">
+    <h2 class="font-title max-w-2xl text-center text-3xl lg:text-5xl">
+      Nuestros servicios
+    </h2>
 
-  <div class="mt-20 grid grid-cols-3 gap-8">
-    <article
-      class="bg-fiveblue-200 flex flex-col items-center gap-4 rounded-2xl p-8 text-center"
-    >
-      <h3 class="font-title text-3xl">Presencia digital</h3>
-      <p class="text-lg font-medium">Tu primer paso en las redes sociales</p>
-      <p>
-        Creamos una estrategia que te permita establecer una base sólida en las
-        redes sociales. Desde la creación de contenido visual hasta la
-        configuración de tus perfiles, nos encargamos de que tu marca tenga una
-        presencia digital coherente y efectiva.
-      </p>
-    </article>
-
-    <article
-      class="bg-fivegreen-200 flex flex-col items-center gap-4 rounded-2xl p-8 text-center"
-    >
-      <h3 class="font-title text-3xl">Boost Redes</h3>
-      <p class="text-lg font-medium">Impulsa tus redes al siguiente nivel</p>
-      <p>
-        Si ya tienes una presencia establecida, este paquete está diseñado para
-        aumentar la visibilidad de tu marca, generando más interacciones y
-        atrayendo nuevos seguidores. Creamos campañas específicas para tu
-        audiencia y optimizamos cada acción para mejorar el rendimiento de tus
-        redes.
-      </p>
-    </article>
-
-    <article
-      class="bg-fiveblue-200 flex flex-col items-center gap-4 rounded-2xl p-8 text-center"
-    >
-      <h3 class="font-title text-3xl">Full Interacción</h3>
-      <p class="text-lg font-medium">Actividad constante para tu marca</p>
-      <p>
-        Este servicio está diseñado para aquellos que buscan una presencia
-        activa y de calidad en sus redes sociales. Gestionamos y generamos
-        contenido de manera constante, interactuamos con tu audiencia y
-        mantenemos tus redes siempre activas, lo que te permite mantener una
-        relación continua con tus seguidores.
-      </p>
-    </article>
+    <p class="pt-2 text-center">
+      Puedes contratar servicios individuales o elegir uno de nuestros packs
+      personalizados para redes sociales. Y si no sabes por dónde empezar,
+      ¡nosotrxs te asesoramos para encontrar lo que mejor se adapta a tu
+      negocio!
+    </p>
   </div>
+
+  <Service title="Gestión de redes sociales" open>
+    <p>Impulsa tu marca con contenido estratégico y comunidad activa</p>
+
+    <ul class="grid grid-cols-3 gap-4">
+      <li
+        class="bg-fiveblue-100 flex -rotate-2 flex-col items-center gap-2 rounded-2xl p-4"
+      >
+        <Pen class="size-16" />
+        <h4 class="font-title text-2xl shadow">Creación de contenido</h4>
+        <p>
+          diseño de posts, reels, stories y más, adaptados a tu identidad de
+          marca.
+        </p>
+      </li>
+
+      <li
+        class="bg-fivegreen-100 flex rotate-2 flex-col items-center gap-2 rounded-2xl p-4"
+      >
+        <Plan class="size-16" />
+        <h4 class="font-title text-2xl shadow">Planificación de contenido</h4>
+        <p>calendario mensual alineado con tus objetivos y fechas clave.</p>
+      </li>
+
+      <li
+        class="bg-fiveblue-100 flex -rotate-2 flex-col items-center gap-2 rounded-2xl p-4"
+      >
+        <Pen class="size-16" />
+        <h4 class="font-title text-2xl shadow">Estrategia de contenido</h4>
+        <p>
+          análisis del público, benchmarking, tono de comunicación y tipo de
+          publicaciones.
+        </p>
+      </li>
+
+      <li
+        class="bg-fivegreen-100 flex rotate-2 flex-col items-center gap-2 rounded-2xl p-4"
+      >
+        <Pen class="size-16" />
+        <h4 class="font-title text-2xl shadow">Gestión de la comunidad</h4>
+        <p>
+          respuestas a mensajes, comentarios, interacción diaria para mantener
+          el engagement.
+        </p>
+      </li>
+
+      <li
+        class="bg-fiveblue-100 flex -rotate-2 flex-col items-center gap-2 rounded-2xl p-4"
+      >
+        <Pen class="size-16" />
+        <h4 class="font-title text-2xl shadow">Campañas de publicidad</h4>
+        <p>
+          diseño, segmentación y optimización de anuncios en Meta
+          (Instagram/Facebook), TikTok, etc.
+        </p>
+      </li>
+    </ul>
+  </Service>
+
+  <Service title="Produccion audiovisual">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid vitae
+    amet voluptatum libero, a magni neque quam. Veniam explicabo doloremque
+    atque magnam repudiandae vero ipsa ullam totam ad cumque.
+  </Service>
+
+  <Service title="Automatización & funnels">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sequi
+    suscipit velit fugiat aspernatur dolores a minus sapiente numquam? Nisi
+    aspernatur officiis maiores quaerat impedit molestiae dolor. Facilis, eum
+    fugit!
+  </Service>
+
+  <Service title="Diseño y desarrollo de web">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid vitae
+    amet voluptatum libero, a magni neque quam. Veniam explicabo doloremque
+    atque magnam repudiandae vero ipsa ullam totam ad cumque.
+  </Service>
 </section>
